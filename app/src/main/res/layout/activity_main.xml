@@ -12,9 +12,9 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="100dp"
-        android:layout_marginTop="15dp"
+        android:layout_marginTop="25dp"
         android:layout_marginEnd="100dp"
-        android:layout_marginBottom="200dp"
+        android:layout_marginBottom="150dp"
         android:text="Abschicken"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -33,16 +33,17 @@
         android:text="Bitte gib deine Matrikelnummer ein"
         app:layout_constraintBottom_toTopOf="@+id/server_btn"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.355"
+        app:layout_constraintHorizontal_bias="0.364"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0" />
 
     <EditText
         android:id="@+id/mtrnr"
         android:layout_width="347dp"
         android:layout_height="68dp"
         android:layout_marginStart="32dp"
-        android:layout_marginTop="150dp"
+        android:layout_marginTop="20dp"
         android:layout_marginEnd="32dp"
         android:layout_marginBottom="100dp"
         android:ems="10"
@@ -50,7 +51,7 @@
         android:inputType="number|numberDecimal"
         app:layout_constraintBottom_toTopOf="@+id/server_btn"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/field" />
 
@@ -59,14 +60,15 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="175dp"
-        android:layout_marginTop="100dp"
+        android:layout_marginTop="10dp"
         android:layout_marginEnd="175dp"
-        android:layout_marginBottom="100dp"
+        android:layout_marginBottom="150dp"
         android:text="Serverantwort"
         app:layout_constraintBottom_toTopOf="@+id/server_btn"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/mtrnr" />
+        app:layout_constraintTop_toBottomOf="@+id/mtrnr"
+        app:layout_constraintVertical_bias="0.0" />
 
     <Button
         android:id="@+id/calclulate"
@@ -80,15 +82,17 @@
         android:text="Calculate"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.494"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/server_btn" />
+        app:layout_constraintTop_toBottomOf="@+id/server_btn"
+        app:layout_constraintVertical_bias="1.0" />
 
     <EditText
         android:id="@+id/result"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="100dp"
-        android:layout_marginTop="25dp"
+        android:layout_marginTop="50dp"
         android:layout_marginEnd="100dp"
         android:layout_marginBottom="200dp"
         android:ems="10"
@@ -99,6 +103,22 @@
         app:layout_constraintStart_toEndOf="@+id/mtrnr"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.889" />
+        app:layout_constraintVertical_bias="0.86" />
+
+    <EditText
+        android:id="@+id/number"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="100dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginEnd="100dp"
+        android:layout_marginBottom="20dp"
+        android:ems="10"
+        android:inputType="number|text"
+        android:text="Mtrnr"
+        app:layout_constraintBottom_toTopOf="@+id/result"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/server" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
